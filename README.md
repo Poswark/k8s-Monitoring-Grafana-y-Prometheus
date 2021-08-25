@@ -8,7 +8,7 @@ namespace/monitoring created</pre>
 
 **Prometheus Deployment**
 
-<pre>[root@k8s-master1]# kubectl create -f .
+<pre>[root@k8s-master1 kubernetes-prometheus]# kubectl create -f .
 clusterrole.rbac.authorization.k8s.io/prometheus created
 clusterrolebinding.rbac.authorization.k8s.io/prometheus created
 configmap/prometheus-server-conf created
@@ -17,7 +17,7 @@ service/prometheus-service created</pre>
 
 **Grafana Deployment**
 
-<pre>[root@k8s-master1 kubernetes-grafana]# kubectl create  -f .
+<pre>[root@k8s-master1 kubernetes-grafana]# kubectl create -f .
 deployment.apps/grafana created
 configmap/grafana-datasources created
 service/grafana created</pre>
