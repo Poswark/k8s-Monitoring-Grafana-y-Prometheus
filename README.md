@@ -36,7 +36,7 @@ grafana              NodePort   10.111.45.132    <none>        3000:32150/TCP   
 prometheus-service   NodePort   10.105.135.187   <none>        8080:32100/TCP   7m13s </pre>
 
 <pre>**We enter the grafana url** 
-*http://$IP:32150/*</pre>
+http://$IP:32150/ </pre>
 
 **We cook Grafana with the database**
 ![Alt text](images/DataSource.png?raw=true "Datasource")
