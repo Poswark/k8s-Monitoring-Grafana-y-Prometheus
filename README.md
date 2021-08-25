@@ -1,28 +1,35 @@
 # k8s-Monitoring-Grafana-y-Prometheus
 Kubernetes cluster monitoring.
 
+**create namespaces monitoring**
 
-[root@k8s-master1]# kubectl create ns monitoring
-namespace/monitoring created
-cd.
-[root@k8s-master1]# kubectl create -f .
+<pre>[root@k8s-master1]# kubectl create ns monitoring
+namespace/monitoring created</pre>
+
+**Prometheus Deployment**
+
+<pre>[root@k8s-master1]# kubectl create -f .
 clusterrole.rbac.authorization.k8s.io/prometheus created
 clusterrolebinding.rbac.authorization.k8s.io/prometheus created
 configmap/prometheus-server-conf created
 deployment.apps/prometheus-deployment created
-service/prometheus-service created
+service/prometheus-service created</pre>
 
+**Grafana Deployment**
 
-[root@k8s-master1 kubernetes-grafana]# kubectl create  -f .
+<pre>[root@k8s-master1 kubernetes-grafana]# kubectl create  -f .
 deployment.apps/grafana created
 configmap/grafana-datasources created
-service/grafana created
+service/grafana created</pre>
 
-Pods
+**Pods must be left in runing**
+<pre>
 [root@k8s-master1 ~]# kubectl get pods -n monitoring
 NAME                                     READY   STATUS    RESTARTS   AGE
 grafana-548fdc7598-ns6kr                 1/1     Running   0          37s
-prometheus-deployment-54686956bd-hvcjj   1/1     Running   0          6m59s
+prometheus-deployment-54686956bd-hvcjj   1/1     Running   0          6m59s</pre>
+
+**Services must be in NodePort**
 
 [root@k8s-master1 ~]# kubectl get svc -n monitoring
 NAME                 TYPE       CLUSTER-IP       EXTERNAL-IP   PORT(S)          AGE
@@ -32,3 +39,4 @@ prometheus-service   NodePort   10.105.135.187   <none>        8080:32100/TCP   
 
 
 
+![Alt text](images/import.png?raw=true "Title")
