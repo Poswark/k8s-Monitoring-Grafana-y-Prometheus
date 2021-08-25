@@ -35,8 +35,9 @@ NAME                 TYPE       CLUSTER-IP       EXTERNAL-IP   PORT(S)          
 grafana              NodePort   10.111.45.132    <none>        3000:32150/TCP   51s
 prometheus-service   NodePort   10.105.135.187   <none>        8080:32100/TCP   7m13s </pre>
 
-<pre>**We enter the grafana url,  your IP** 
 
+**We enter the grafana url, your IP**
+<pre>
 http://$IP:32150/ </pre>
 
 **We cook Grafana with the database**
