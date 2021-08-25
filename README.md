@@ -49,4 +49,4 @@ prometheus-service   NodePort   10.105.135.187   <none>        8080:32100/TCP   
 
 **We review the Dashboard**
 
-![Alt text](images/import.png?raw=true "Dashboard")
+![Alt text](images/monitoring.png?raw=true "Dashboard")
