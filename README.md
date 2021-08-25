@@ -35,13 +35,14 @@ NAME                 TYPE       CLUSTER-IP       EXTERNAL-IP   PORT(S)          
 grafana              NodePort   10.111.45.132    <none>        3000:32150/TCP   51s
 prometheus-service   NodePort   10.105.135.187   <none>        8080:32100/TCP   7m13s </pre>
 
-<pre>**We enter the grafana url** 
+<pre>**We enter the grafana url,  your IP** 
+
 http://$IP:32150/ </pre>
 
 **We cook Grafana with the database**
 ![Alt text](images/DataSource.png?raw=true "Datasource")
 
-**We import the Dashboard k8s-GPO.json**
+**We import the Dashboard kubernetes-cluster-monitoring-via-prometheus_rev3.json**
 
 <Pre> Note: On the official Grafana page we can download the Dashboard that we want </pre>
 
