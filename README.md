@@ -49,6 +49,10 @@ http://$IP:32150/ </pre>
 
 ![Alt text](images/import.png?raw=true "Import")
 
-**We review the Dashboard**
+**Revisa el tablero**
 
 ![Alt text](images/monitoring.png?raw=true "Dashboard")
+
+**pod review in detail**
+
+![Alt text](images/pods.png?raw=true "Dashboard")
